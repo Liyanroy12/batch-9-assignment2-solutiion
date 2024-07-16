@@ -200,7 +200,7 @@ select {
 
 .card-1,
 .card-3 {
-    order: 1px solid rgba(251, 181, 99, 0.2);
+    border: 1px solid rgba(251, 181, 99, 0.2);
     border-radius: 16px;
     background: rgba(251, 181, 99, 0.05);
 }
@@ -275,6 +275,75 @@ select {
     display: none;
 }
 
+/* Deals and discound style */
+.deals-discount-container {
+    background-image: url("../Images/Group\ 39.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    margin: 1.5rem;
+    padding: 5%;
+    border-radius: 16px;
+}
+
+.deal-text-container {
+    max-width: 579px;
+    height: 389px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5%;
+}
+
+.some-text {
+    margin-top: 15%;
+    padding: 2rem;
+    line-height: 25px;
+}
+
+.some-text h3,
+p {
+    text-align: left;
+}
+
+.some-text h3 {
+    color: rgb(19, 19, 24);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.some-text p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.some-text span{
+    color: rgb(255, 84, 0);
+}
+.second{
+    background-image: url("../Images/Group\ 40.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    /* padding: 5%; */
+    /* margin: 2%; */
+    border-radius: 16px;
+} 
+.second-card{
+    width: 579px;
+    height: 389px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 5%;
+    margin-left: 5%;
+}
 /* Responsive Design*/
 
 @media screen and (max-width: 600px) {
@@ -331,15 +400,41 @@ select {
         width: 100%;
         height: 100%;
     }
-    .choose-card{
+
+    .choose-card {
         grid-template-columns: 1fr;
     }
+
     .choose-item {
         width: 90%;
         height: 220px;
         margin: 1rem auto;
     }
-    #choose-item3{
+
+    #choose-item3 {
         margin: 1rem auto;
+    }
+    .deals-discount-container{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .deal-text-container{
+        width: 90%;
+        margin: 2rem auto;
+        height: 450px;
+    }
+    .second{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .some-text{
+        margin-top: 5%;
+        text-align: center;
+    }
+    .second-card{
+        width: 80%;
+        margin: 1rem auto;
+        height: 450px;
     }
 }
